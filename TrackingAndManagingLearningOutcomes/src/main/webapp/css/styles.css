@@ -1,0 +1,119 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eef2f5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #2c3e50; /* Dark blue-grey for professional look */
+    color: #ecf0f1; /* Light grey for contrast */
+    text-align: center;
+    padding: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Main content layout */
+.mainContent {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+/* Login form container */
+.loginContainer {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Header */
+.loginHeader {
+    font-size: 2em;
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Login form fields */
+.loginContent {
+    width: 100%;
+}
+
+.loginContent div {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #34495e;
+}
+
+select, input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bdc3c7;
+    border-radius: 8px;
+    margin-top: 5px;
+    background-color: #f8f9fa;
+    color: #34495e;
+    font-size: 1em;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+select:focus, input:focus {
+    border-color: #2980b9;
+    background-color: #ffffff;
+    outline: none;
+}
+
+/* Sign-in button */
+.signinButton {
+    width: 100%;
+    padding: 12px;
+    background-color: #2980b9; /* Bright blue for visibility */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.signinButton:hover {
+    background-color: #3498db;
+}
+
+#ack {
+    text-align: center;
+    color: red;
+    font-size: 0.9em;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .mainContent {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .loginContainer {
+        width: 100%;
+        max-width: 100%;
+    }
+}
